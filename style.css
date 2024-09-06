@@ -1,0 +1,53 @@
+.nav
+{
+    background-color: rgb(62, 13, 13);
+    width: 100%;
+    
+    border: 5px solid black;
+    border-radius: 10px;
+    color: white;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo
+{
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    position: absolute;
+    left: 50px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+button{
+    color:rgb(255, 255, 255);
+    background-color: rgb(85, 56, 56);
+    padding:10px;
+    border: 2px solid black;
+    border-radius: 50%;
+    height:80px;
+    width: 80px;
+    margin-left: 10px;
+} 
+.Search
+{
+    color:rgb(255, 255, 255);
+    background-color: rgb(85, 56, 56);
+    padding:10px;
+    border: 2px solid black;
+    height:60px;
+    border-radius: 20px;
+}
+input::placeholder
+{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
