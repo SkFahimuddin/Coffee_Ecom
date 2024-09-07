@@ -34,8 +34,15 @@ nav a {
     padding: 0 30px;
     text-decoration: none;
     display: flex;
+    justify-content: center;
     align-items: center;
-    color: black;
+    color: rgba(69, 2, 2, 0.716);
+    background-color: rgb(255, 255, 214);
+    border: 2px solid black;
+    margin: 2px;
+    height: 35px;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
 nav li i{
@@ -45,10 +52,16 @@ nav li i{
 }
 
 nav input{
-    height: 30px;
+    height: 34px;
     width: 40%;
+    border: 2px solid black;
     border-radius: 10px;
     margin-right: auto;
+    background-color: rgb(255, 255, 214);
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(69, 2, 2, 0.716);
 }
 
 nav li:first-child{
@@ -71,14 +84,34 @@ nav li:-moz-placeholder{
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
+    border: 2px solid black;
+    border-radius: 15px 0 0 15px;
 }
 
-.sidebar li{
-    width: 100%;
-}
+
 
 .sidebar a{
-    width: 100%;
+    width: 100px;
+}
+input::placeholder
+{
+    display: flex;
+    text-align: center;
+    background-color: rgb(255, 255, 214);
+    color:rgba(69, 2, 2, 0.716);
+    font-weight: bold;
+    font-size: 15px;
+}
+.fa-solid 
+{
+    font-weight: 1000;
+    position: relative;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+.fa-solid:hover
+{
+    cursor: pointer;
 }
