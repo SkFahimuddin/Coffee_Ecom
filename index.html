@@ -3,20 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Ecom Coffee</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class ="nav" id = "nav">
-        <div class="logo" id="logo"> Logo</div>
-            
+        <ul class = "sidebar">
+            <li onclick=hideSidebar()><i class="fa-solid fa-xmark"></i></li>
+            <input placeholder ="Search here..."class="Search" id ="search ">
+            <li><a href = "#">Home</a></li>
+            <li><a href = "#">About</a></li>
+            <li><a href = "#">Services</a></li>
+        </ul>
+
             <ul>
-                <input placeholder ="Search"class="Search" id ="search ">
-                <button class="Home" id ="Home">Home</button>  
-                <button class="About" id ="About">About</button>
-                <button class="Service" id ="Service">Service</button>
+                <li><a href = "#">logo</a></li>
+                <input placeholder ="Search here..."class="Search" id ="search ">
+                <li><a href = "#">Home</a></li>
+                <li><a href = "#">About</a></li>
+                <li><a href = "#">Services</a></li>
+               <li onclick=showSidebar()><i class="fa-solid fa-list"></i></li>
             </ul>
     </nav>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,76 +1,84 @@
-body, *{
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-nav {
-    flex: 1;
-    background-color: rgb(62, 13, 13);
-    min-height: 5vh;
-    max-width: 100%;
-    border: 5px solid black;
-    border-radius: 10px;
-    color: white;
-    display: grid;
+body{
+    min-height: 100vh;
+    background-color: rgb(255, 255, 214);
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    width: 100%;
+    padding-bottom: 5px;
+    background-color: rgba(69, 2, 2, 0.716);
+    box-shadow: 2px 2px 4px rgb(39, 37, 37);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 
-.Home{
-   position: absolute;
-   top: 40px;
-   right: 17em;
+nav li {
+    height: 40px;
 }
 
-.About{
-    position: absolute;
-    top: 40px;
-    right: 10em;
- }
-
- .Service{
-    position: absolute;
-    top: 40px;
-    right: 3em;
- }
-
-.logo {
-    height: 70px;
-    width: 70px;
-    background-color: white;
-    position: absolute;
-    left: 30px;
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
     color: black;
-    border: 2px solid black;
-    border-radius: 50%;
-    display: grid;
-    justify-content: center;
-    align-items: center;
 }
 
-button {
-    color:rgb(255, 255, 255);
-    background-color: rgb(85, 56, 56);
-    padding:10px;
-    border: 2px solid black;
-    border-radius: 50%;
-    min-height: 70px;
-    width: 70px;
+nav li i{
+    height: 30px;
+    padding: 0 20px;
+    padding-top: 8px;
 }
 
-.Search {
-    flex: 1 1 100rem;
-    color:rgb(255, 255, 255);
-    background-color: rgb(85, 56, 56);
-    border: 2px solid black;
-    height:40px;
-    border-radius: 20px;
-    width: 350px; 
-    margin: 50px;
-    margin-left: 120px;
+nav input{
+    height: 30px;
+    width: 40%;
+    border-radius: 10px;
+    margin-right: auto;
 }
 
-input::placeholder {
-    color: rgb(255, 255, 255);
-    text-align: center;
+nav li:first-child{
+    margin-right: auto;
+}
+
+nav li:-moz-placeholder{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(204, 184, 83, 0.389);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
 }
