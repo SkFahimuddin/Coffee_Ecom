@@ -1,57 +1,76 @@
 body, *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-nav
-{
+
+nav {
+    flex: 1;
     background-color: rgb(62, 13, 13);
-    height: 80px;
-    width: 100%;
+    min-height: 5vh;
+    max-width: 100%;
     border: 5px solid black;
     border-radius: 10px;
     color: white;
-    padding:0;
-    display: flex;
-    justify-content: center;
+    display: grid;
     align-items: center;
 }
-.logo
-{
+
+.Home{
+   position: absolute;
+   top: 40px;
+   right: 17em;
+}
+
+.About{
+    position: absolute;
+    top: 40px;
+    right: 10em;
+ }
+
+ .Service{
+    position: absolute;
+    top: 40px;
+    right: 3em;
+ }
+
+.logo {
     height: 70px;
     width: 70px;
     background-color: white;
     position: absolute;
-    left: 50px;
+    left: 30px;
     color: black;
     border: 2px solid black;
     border-radius: 50%;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
-
 }
-button{
+
+button {
     color:rgb(255, 255, 255);
     background-color: rgb(85, 56, 56);
     padding:10px;
     border: 2px solid black;
     border-radius: 50%;
-    height:70px;
+    min-height: 70px;
     width: 70px;
-    margin-left: 40px;
-} 
-.Search
-{
+}
+
+.Search {
+    flex: 1 1 100rem;
     color:rgb(255, 255, 255);
     background-color: rgb(85, 56, 56);
-    padding:10px;
     border: 2px solid black;
     height:40px;
     border-radius: 20px;
-    width: 75vh;
+    width: 350px; 
+    margin: 50px;
+    margin-left: 120px;
 }
-input::placeholder
-{
+
+input::placeholder {
     color: rgb(255, 255, 255);
     text-align: center;
 }
