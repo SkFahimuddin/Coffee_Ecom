@@ -10,6 +10,8 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* nav start */
+
 nav{
     width: 100%;
     padding-bottom: 5px;
@@ -29,9 +31,9 @@ nav li {
     height: 40px;
 }
 
-nav a {
+nav li a {
     height: 100%;
-    padding: 0 30px;
+    padding: 0 20px;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -43,6 +45,12 @@ nav a {
     height: 35px;
     border-radius: 10px;
     font-weight: bold;
+    transition: 0.3s ease;
+}
+
+nav li a:hover, nav li a.active{
+    color: rgba(165, 42, 42, 0.767);
+
 }
 
 nav li i{
@@ -90,13 +98,11 @@ nav li:-moz-placeholder{
     border-radius: 15px 0 0 15px;
 }
 
-
-
 .sidebar a{
     width: 100px;
 }
-input::placeholder
-{
+
+input::placeholder {
     display: flex;
     text-align: center;
     background-color: rgb(255, 255, 214);
@@ -104,14 +110,60 @@ input::placeholder
     font-weight: bold;
     font-size: 15px;
 }
-.fa-solid 
-{
+
+.fa-solid {
     font-weight: 1000;
     position: relative;
     font-size: 25px;
-    color: rgb(0, 0, 0);
+    color: rgb(241, 204, 204);
 }
-.fa-solid:hover
-{
+
+.fa-solid:hover {
     cursor: pointer;
 }
+
+/* nav end */
+
+
+
+/* home page start */
+
+#container{
+    background-image: url(coffee_home.png); 
+    height:90vh;
+    width: 100%;  
+    font-size: 30px;
+    background-position: top 30% left 80%;
+    background-repeat: no-repeat;
+    background-size: 80vh;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#container h4, p{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+#container h1{
+    padding: 10px 0;
+    color: rgba(155, 119, 1, 0.932);
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#container button{
+    background-color:  rgba(69, 2, 2, 0.318);
+    padding: 10px 15px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+
+
+/* home page end */
