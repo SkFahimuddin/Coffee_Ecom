@@ -10,6 +10,9 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.section-p1{
+    padding: 40px 80px;
+}
 
 /* nav start */
 nav{
@@ -129,11 +132,11 @@ input::placeholder {
 #container{
     height:90vh;
     width: 100%;  
-    
     display: flex;
     align-items: center;
     justify-content: start;
 }
+
 #intro{
     font-size: 30px;
     width: 50%;
@@ -141,12 +144,14 @@ input::placeholder {
     justify-content: center;
     align-items: center;
 }
+
 #intro_img{
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 #int_img{
     background-image: url('coffee_home.png');
     background-size:contain;
@@ -155,6 +160,7 @@ input::placeholder {
     height: 80vh;
     width: 100%;
 }
+
 #container h4, p{
     padding-bottom: 10px;
     font-size: 20px;
@@ -175,3 +181,70 @@ input::placeholder {
     cursor: pointer;
 }
 /* home page end */
+
+/* feature start */
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .feat-box .img-feat{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .feat-box{
+    font-size: 20px;
+    width: 150px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+    border: 1px solid #d6d188;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .feat-box:hover{
+    box-shadow: 10px 10px 54px rgba(197, 149, 99, 0.503);
+}
+
+#feature .feat-box h6{
+    display: inline-block;
+    padding: 9px 8px 10px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: rgb(91, 15, 162);
+    background-color: rgba(233, 150, 122, 0.705);
+}
+
+#feature .feat-box:nth-child(2) h6{
+    color: rgb(121, 45, 10);
+    background-color: rgb(218, 162, 231);
+}
+
+#feature .feat-box:nth-child(3) h6{
+    color: rgb(2, 56, 59);
+    background-color: #cdd4f8;
+}
+
+#feature .feat-box:nth-child(4) h6{
+    color: rgba(126, 33, 207, 0.878);
+    background-color: #74a359b0;
+}
+
+#feature .feat-box:nth-child(5) h6{
+    color: #c5ea9e;
+    background-color: rgba(197, 64, 90, 0.919);
+}
+
+#feature .feat-box:nth-child(6) h6{
+    color: rgb(111, 20, 100);
+    background-color: rgba(54, 158, 214, 0.475);
+}
+
+
+
+/* feature end */
