@@ -245,6 +245,84 @@ input::placeholder {
     background-color: rgba(54, 158, 214, 0.475);
 }
 
-
-
 /* feature end */
+
+/* spotlight start */
+
+#product1{
+    text-align: center;
+}
+
+#product1 h2{
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 15px;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro{
+    width: 18%;
+    min-width: 250px;
+    background-color: rgb(250, 248, 224);
+    padding: 12px 8px;
+    border: 2px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+#product1 .pro img{
+    width: 75%;
+    border-radius: 20px;
+}
+
+#product1 .pro .spotlight{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .spotlight h5{
+    padding-top: 6px;
+    font-size: 17px;
+}
+
+#product1 .pro .spotlight i{
+    font-size: 14px;
+    color: rgb(235, 188, 67);
+}
+
+#product1 .pro .spotlight h4{
+    padding-top: 7px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #056e67;
+}
+
+#product1 .pro .bag{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #c7edcd;
+    color: #055d57;
+    border: 1px solid #7fab86;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* spotlight start */
