@@ -14,6 +14,23 @@ body{
     padding: 40px 80px;
 }
 
+.section-m1{
+    padding: 40px 0;
+}
+
+button.normal{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
 /* nav start */
 nav{
     width: 100%;
@@ -326,3 +343,36 @@ input::placeholder {
 }
 
 /* spotlight start */
+
+
+/* banner start */
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(banner-back.jpg);
+    background-position: center;
+}
+
+#banner h2{
+    color:#fff;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    padding: 15px 0;
+    text-shadow: 20px 10px 20px #a76287;
+}
+
+#banner h2 span{
+    color: rgb(236, 227, 94);
+}
+
+#banner button:hover{
+    background: #1daba2;
+    color: #fff;
+}
+
+/* banner start */
