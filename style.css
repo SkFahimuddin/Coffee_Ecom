@@ -37,6 +37,10 @@ nav{
     padding-bottom: 5px;
     background-color: rgba(69, 2, 2, 0.716);
     box-shadow: 2px 2px 4px rgb(39, 37, 37);
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 999;
 }
 
 nav ul{
@@ -141,7 +145,34 @@ input::placeholder {
 .fa-solid:hover {
     cursor: pointer;
 }
+
+.fa-cart-shopping
+{
+    display: none;
+}
 /* nav end */
+.cart-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    width: 300px;
+}
+
+.cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-items li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-items img {
+    margin-right: 10px;
+}
 
 
 
@@ -170,7 +201,7 @@ input::placeholder {
 }
 
 #int_img{
-    background-image: url('coffee_home.png');
+    background-image: url('static/images/coffee_home.png');
     background-size:contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -353,7 +384,7 @@ input::placeholder {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(banner-back.jpg);
+    background-image: url(static/images/banner-back.jpg);
     background-position: center;
 }
 
