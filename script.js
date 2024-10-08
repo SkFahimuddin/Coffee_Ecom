@@ -45,7 +45,7 @@ document.querySelectorAll('.fa-bag-shopping').forEach(button => {
 updateCartIcon();
 
 // Redirect to cart.html when clicking the Cart link
-document.querySelector('li a[href="#"]').addEventListener('click', (event) => {
+document.querySelector('li a[href="#cart"]').addEventListener('click', (event) => {
     event.preventDefault();
     window.location.href = 'cart.html'; // Redirect to the cart page
 });
