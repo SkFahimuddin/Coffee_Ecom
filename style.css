@@ -432,3 +432,11 @@ input::placeholder {
 .remove-btn:hover {
     color: darkred;
 }
+
+#orderbutton{
+    display: flex;
+    justify-content: center;
+}
+#placeOrderBtn{
+    background-color: beige;
+}
