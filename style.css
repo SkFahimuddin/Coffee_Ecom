@@ -373,7 +373,7 @@ input::placeholder {
     right: 20px;
 }
 
-/* spotlight start */
+/* spotlight end */
 
 
 /* banner start */
@@ -406,4 +406,29 @@ input::placeholder {
     color: #fff;
 }
 
-/* banner start */
+/* banner end */
+
+
+.cart-heading{
+    color: brown;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+
+.remove-btn {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    position: absolute;
+    right: 5vh;
+}
+
+.remove-btn:hover {
+    color: darkred;
+}
