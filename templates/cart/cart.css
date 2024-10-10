@@ -1,0 +1,38 @@
+body{
+    min-height: 100vh;
+    background-color: rgb(255, 255, 214);
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cart-heading{
+    color: brown;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+
+.remove-btn {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    position: absolute;
+    right: 5vh;
+}
+
+.remove-btn:hover {
+    color: darkred;
+}
+
+#orderbutton{
+    display: flex;
+    justify-content: center;
+}
+#placeOrderBtn{
+    background-color: beige;
+}
