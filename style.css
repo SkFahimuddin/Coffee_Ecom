@@ -373,6 +373,19 @@ input::placeholder {
     right: 20px;
 }
 
+#product1 .pro .bag:hover{
+    background-color: #055d57;
+    color: #bde9c3;
+}
+
+#product1 .pro .spotlight .veg{
+    font-size: 8px;
+    color: #14837c;
+    padding: 3px;
+    border: 3px solid #14837c;
+}
+
+
 /* spotlight end */
 
 
