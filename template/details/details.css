@@ -4,78 +4,164 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul .home-media{
+    display: none;
+}
+
+nav li:first-child {
+    margin-right: 0;
+}
+
+
+.details-form {
+    width: 65%;
+    margin: 50px;
+}
+
 .container{
-    margin: 0 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.details-form{
-    width: 70%;
-    margin: 40px;
+h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: left;
+    color: #3f2c28;
 }
 
-h2{
-    font-size: 50px;
-    padding-bottom: 50px;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.mug{
+    color: rgb(165, 99, 57);
+    text-shadow: 5px 5px 10px #c0aca6;
 }
 
 h3{
     font-size: 20px;
-    padding-bottom: 30px;
-}
-
-h2, h3{
-    width: 80%;
-    display: flex;
-    justify-content: start;
+    margin-bottom: 30px;
+    font-weight: 650;
+    color: #67473b;
 }
 
 .address-sec{
     display: flex;
     justify-content:space-between;
-    gap: 200px;
+    gap: 70px;
 }
 
-.first-half .input-box input{
-    padding: 10px 100px;
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.first-half, .second-half, .input-box input{
+    padding: 10px;
     width: 100%;
 }
 
 .input-box input{
-    width: 120%;
-    padding: 10px 30px;
-    background: rgb(255, 255, 214);
-    border: 1px solid grey;
+    background: transparent;
+    border: 2px solid grey;
     border-radius: 10px;
     font-size: 15px;
+    padding: 10px;
 }
 
-.input-box span, input{
-    display: block;
+.input-box input:focus {
+    outline: none;
+    border-color: #795548;
+    box-shadow: 0 0 10px rgba(121, 85, 72, 0.3);
+  }
+
+.input-box label{
     margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 650;
+    color: #4e342e;
 }
 
-.place, .house-pin{
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    gap: 100px;
+.required {
+    color: red;
+    font-weight: 800;
+    margin-left: 4px; 
+}
+
+.input-box input:invalid {
+    border-color: red;
 }
 
 form .button{
-    margin: 30px;
+    margin: 20px auto;
     font-size: 15px;
     font-weight: 700;
-    padding: 10px;
-    background-color: rgba(69, 2, 2, 0.318);;
+    padding: 10px 20px;
+    background-color: #8d6e63;
     border-radius: 5px;
     cursor: pointer;
-    border: 2px solid black;
-    transition: 0.2s;
+    color: white;
+    transition: 0.3s;
 }
 
+form .button:hover{
+    background-color: #6d4c41;
+    box-shadow: 0 5px 8px grey;
+}
+
+@media (max-width:700px) {
+    nav ul .home-full, .about-full, .services-full, .cart-full{
+        display: none;
+    }
+
+    nav ul .home-media{
+        display: block;
+        color: rgb(255, 255, 214);
+    }
+
+    nav ul li a{
+        background-color: transparent;
+        border: none;
+    }
+
+    .home-media i{
+        color: rgb(226, 205, 178);
+        text-shadow: 5px 5px 15px rgba(15, 14, 14, 0.5);
+        transition: 0.3s;
+    }
+
+    .home-media i:hover{
+        transform: scale(1.1);
+        text-shadow: 10px 10px 20px rgba(12, 1, 1, 0.5);
+    }
+
+    .details-form {
+        width: 100%;
+        margin: 10px;
+    }
+
+    h2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    h3{
+        font-size: 17x;
+    }
+
+    .address-sec {
+        flex-direction: column;
+    }
+
+    .house-pin, .place {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+    
+}

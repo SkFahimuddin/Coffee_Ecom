@@ -3,46 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="../../style.css" />
     <link rel="stylesheet" href="details.css" />
   </head>
   <body>
     <nav class="nav" id="nav">
       <ul>
-        <li><a href="../../index.html">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="../cart/cart.html">Cart</a></li>
+        <li class ="home-full"><a href="../../index.html">Home</a></li>
+        <li class ="home-media"><a href="../../index.html"><i class="fa-solid fa-house"></i></a></li>
+        <li class ="about-full"><a href="#">About</a></li>
+        <li class ="services-full"><a href="#">Services</a></li>
+        <li class ="cart-full"><a href="../cart/cart.html">Cart</a></li>
       </ul>
     </nav>
 
 
     <div class = "container">
 
+
       <form class="details-form">
-          <h2 class="title">Address Details</h2>
+          <h2 class="title">Address Details <i class="fa-solid fa-mug-saucer mug"></i></h2>
           <h3>Deliver to:</h3>
 
           <div class="address-sec">
           <div class = "first-half">
             <div class = "input-box">
-                <span>Full Name: </span>
+                <label for="full-name">Full Name: <span class="required">*</span></label>
                 <input type = "text" placeholder = "Enter your first & last name here">
             </div>
   
             <div class = "input-box">
-              <span>Email: </span>
+              <label for="email">Email:</label>
               <input type = "email" placeholder = "example@mygmail.com">
             </div>
   
             <div class = "input-box">
-              <span>Mobile number: </span>
-              <input type = "text" maxlength = "10" aria-requried = "true" placeholder = "Enter the state">
+              <label for="phone">Mobile number: <span class="required">*</span></label>
+              <input type = "number" maxlength = "10" aria-requried = "true" placeholder = "Enter the state">
             </div>
   
             <div class = "input-box">
-              <span>Address: </span>
+              <label for="address">Address:</label>
               <input type = "text" placeholder = "Road name, Area, Colony">
             </div>
           </div>
@@ -53,28 +58,28 @@
             <div class = "second-half">
               <div class = "house-pin">
                 <div class = "input-box">
-                  <span>Flat, House no., Floor no.: </span>
-                  <input type = "text" maxlength="20" placeholder = "Enter here">
+                  <label for="flat">Flat/House No.:</label>
+                  <input type = "text" maxlength="30" placeholder = "Enter here">
                 </div>
                 <div class = "input-box">
-                  <span>Pincode: </span>
+                  <label for="pincode">Pincode: <span class="required">*</span></label>
                   <input type = "number" maxlength="6" placeholder = "6 digit pincode">
                 </div>
               </div>
                 
               <div class = "place">
                 <div class = "input-box">
-                  <span>State: </span>
+                  <label for="state">State:</label>
                   <input type = "text" placeholder = "Enter the state">
                 </div>
                 <div class = "input-box">
-                  <span>City: </span>
+                  <label for="city">City:</label>
                   <input type = "text" placeholder = "Enter the city">
                 </div>
               </div>
-              <div style="justify-content: center; display:flex"><button type="submit" class ="button">Submit & Continue</button></div>
             </div>
-          </div>  
+          </div>
+          <div style="justify-content: center; display:flex"><button type="submit" class ="button">Submit & Continue</button></div>  
       </form>
     </div>
   </body>
